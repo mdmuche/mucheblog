@@ -1,0 +1,124 @@
+$create_fs: 2vw;
+$create_ml: 3vw;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.blog-create{
+    h1{
+        color: blue;
+    }
+
+    .form{
+        margin: 1.5rem 25%;
+        // display: flex;
+        // justify-content: center;
+        width: 52vw;
+        height: 55vh;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.397);
+        border-radius: 9px;
+
+    .redlabel{
+        color: blue;
+        font-size: $create_fs;
+        margin-left: $create_ml;
+    }
+
+    .titlefield{
+        width: 45vw;
+        margin-left: $create_ml;
+        height: 7vh;
+        margin-left: $create_ml;
+    }
+    .contentfield{
+        margin-left: $create_ml;
+        width: 45vw;
+    }
+    .btn{
+        display: flex;
+        // align-items: center;
+        // align-content: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        
+
+        .btn1{
+            // width: 6vw;
+            // height: 5vh;
+            padding: 0.5rem 1rem;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 1.5vw;
+            font-weight: bold;
+            // border: none;
+            
+        }
+
+        .btn2{
+            // margin-left: 2vh;
+            // width: 15vh;
+            // height: 5vh;
+            padding: 0.5rem 1rem;
+            background-color: blue;
+            border: none;
+            color: white;
+            font-size: 1.5vw;
+            font-weight: bold;
+        }
+    }
+    }
+}
+
+@media (max-width: 320px) {
+    .blog-create{
+         .form{
+            width: 60vw;
+            height: 57vh;
+            margin: 1.5rem 15%;
+ 
+         .redlabel{
+            font-size: 10rem;
+            font-weight: bolder;
+         }
+         .titlefield{
+            width: 90%;
+         }
+         .contentfield{
+            width: 90%;
+         }
+         .btn{
+         .btn1{
+            padding: 0.25rem 0.5rem;
+         }
+         .btn2{
+            padding: 0.25rem 0.5rem;
+         }
+        }
+        }
+        } 
+}
+
+@media (max-width: 500px) {
+    .blog-create{
+       h1{
+        font-size: 1.5rem;
+       }
+        .form{
+
+        .redlabel{
+            font-size: 3vw;
+        }
+        .btn{
+        .btn1{font-size: 0.8rem;}
+        .btn2{font-size: 0.8rem;}
+       }
+       }
+       } 
+    }
+

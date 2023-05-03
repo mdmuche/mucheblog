@@ -1,0 +1,80 @@
+//declaring sass variable
+$nav_bg:blue;
+$nav_fs: 2vw;
+
+
+//declaring a mixin. a mixim is like a js function
+@mixin flex{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+     padding: 0.5rem 2rem;
+     background-color: $nav_bg;
+
+     ol{
+        list-style-type: none;
+        @include flex();
+        display: flex;
+        color: white;
+        font-size: $nav_fs;
+        font-weight: bold;
+        text-transform: capitalize;
+     }
+     a{
+        text-decoration: none;
+        color: white;
+     }
+     li{
+        padding: 0.5rem 1rem;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 9px;
+        &:hover{
+            background-color: gold;
+            color: purple;
+        }
+}
+}
+.count-love{
+     padding: 0.5rem 0.02rem;
+     background-color: $nav_bg;
+     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  font-size: small;
+}
+
+@media (max-width: 320px) {
+   .links{
+      padding: 0.5rem 2rem;
+      ol{
+
+         font-size: 4vw;
+         font-weight: bolder;
+         display: flex;
+         flex-wrap: wrap;
+      }
+      li{
+         padding: 0.5rem 0.7rem;
+         margin-bottom: 0.2rem;
+      }
+      .count-love{
+         padding: 0.1rem 0.005rem;
+         font-size: xx-small;
+        }
+   }
+}
+
+@media (max-width: 500px) {
+   .links{
+     li{
+      font-size: 2.5vw;
+      font-weight: bolder;
+     }
+     .count-love{
+      padding: 0.2rem 0.01rem;
+      font-size: x-small;
+     }
+   }
+}

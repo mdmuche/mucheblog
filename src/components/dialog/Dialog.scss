@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.outerlayer{
+background-color: rgba(221, 10, 221, 0.589);
+width: 40vw;
+height: 20vh;
+border-radius: 9px;
+position: absolute;
+top: 30vh;
+left: 35vw;
+color: white;
+
+h3{
+    text-align: center;
+}
+
+.notify-x{
+    position: absolute;
+    top: 1vh;
+    left: 36vw;
+    width: 3vw;
+    height: 3vh;
+}
+
+
+p{
+    text-align: center;
+}
+
+.flex-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.notify-btn1{
+    width: 5vw;
+    height: 5vh;
+}
+
+.notify-btn2{
+    margin-left: 0.7rem;
+    width: 5vw;
+    height: 5vh;
+}
+}
